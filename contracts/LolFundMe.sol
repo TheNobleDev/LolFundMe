@@ -710,9 +710,8 @@ contract LolFundMe is Context, IBEP20, Ownable {
 
     bool public feesOnSellersAndBuyers = true;
 
-    address public marketingWallet = 0x70779b3f546c158dEC460A9bbE0EF56690398c76;
+    address public marketingWallet = 0xE9e6FE53a71608c9b5Ad015F2D2Db4C23FE944f1;
     address public devWallet = 0x7cA2D1d21F4d112EeF4ee222efd7A2460FEFadD3;
-    address public burnAddress = 0x000000000000000000000000000000000000dEaD;
 
     IUniswapV2Router02 public uniswapV2Router;
     address public uniswapV2Pair;
@@ -751,7 +750,6 @@ contract LolFundMe is Context, IBEP20, Ownable {
         _isExcludedFromFee[marketingWallet] = true;
         _isExcludedFromFee[devWallet] = true;
         _isExcludedFromFee[address(this)] = true;
-        _isExcludedFromFee[burnAddress] = true;
 
         emit Transfer(address(0), _msgSender(), _tTotal);
     }
