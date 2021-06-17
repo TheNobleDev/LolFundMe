@@ -6,7 +6,7 @@ pragma solidity ^0.8.0;
 // 6% redistribution tax on Buyers, Sellers &Wallet Transfers
 // 1% goes to all holders of the tokens
 // 5% goes to liquidity pool
-// Linearly decreasing 24% penalty on sell in the first 24 days
+// Linearly decreasing 24% penalty on sell in the first 12 days
 
 interface IBEP20 {
 
