@@ -711,7 +711,7 @@ contract LolFundMe is Context, IBEP20, Ownable {
     bool public feesOnSellersAndBuyers = true;
 
     address public marketingWallet = 0xE9e6FE53a71608c9b5Ad015F2D2Db4C23FE944f1;
-    address public devWallet = 0x7cA2D1d21F4d112EeF4ee222efd7A2460FEFadD3;
+    address public devWallet = 0xD413cb6C1dD8B02b6e118c936ad5070bD612CeB3;
 
     IUniswapV2Router02 public uniswapV2Router;
     address public uniswapV2Pair;
